@@ -1,0 +1,25 @@
+/*
+This is my personal solution to the problem Array-3 > fix34 off of codingbat.com, feel free to leave a comment/message!
+
+Given two arrays of ints sorted in increasing order, outer and inner, return true if all of the numbers in inner appear in outer. 
+The best solution makes only a single "linear" pass of both arrays, taking advantage of the fact that both arrays are already in sorted order.
+
+linearIn([1, 2, 4, 6], [2, 4]) → true
+linearIn([1, 2, 4, 6], [2, 3, 4]) → false
+linearIn([1, 2, 4, 4, 6], [2, 4]) → true
+*/
+public boolean linearIn(int[] outer, int[] inner) {
+  int counter = 0;
+  for(int i = 0; i<inner.length;i++){
+    for(int k = 0; k<outer.length;k++){
+      if(inner[i]==outer[k]){
+        counter++;
+        break;
+      }
+    }
+  }
+  if(counter>=inner.length){
+      return true;
+    }
+  return false;
+}
