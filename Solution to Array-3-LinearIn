@@ -1,5 +1,5 @@
 /*
-This is my personal solution to the problem Array-3 > fix34 off of codingbat.com, feel free to leave a comment/message!
+This is my personal solution to the problem Array-3-linearIn off of codingbat.com, feel free to leave a comment/message!
 
 Given two arrays of ints sorted in increasing order, outer and inner, return true if all of the numbers in inner appear in outer. 
 The best solution makes only a single "linear" pass of both arrays, taking advantage of the fact that both arrays are already in sorted order.
